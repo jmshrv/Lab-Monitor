@@ -8,14 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+    @State private var entries = ActivityRepository
+        .entries[.thursday]!
+        .filter {
+            $0.weeks.contains {
+                $0.isWithin(19)
+            } && $0.location.contains(Lab.a32.rawValue)
         }
-        .padding()
+    
+    
+    var body: some View {
+        List {
+            ForEach(entries, id: \.id) { entry in
+                VStack(alignment: .leading) {
+                    Text(entry.activities.joined(separator: ", "))
+                    Text(entry.location)
+                        .foregroundStyle(.secondary)
+                }
+            }
+        }
     }
 }
 

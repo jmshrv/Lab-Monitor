@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "4ACE38C3-83E3-47DD-BDF9-1C769E772976"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "806A04B5-E54D-46DA-86AF-2B55075903B4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lab Monitor/Extensions/NSDataAsset+decode.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "decode()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "806A04B5-E54D-46DA-86AF-2B55075903B4 - 4311f992602b21a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.NSDataAsset.decode() throws -&gt; Swift.Dictionary&lt;TimetableParser.Day, Swift.Array&lt;TimetableParser.TimetableEntry&gt;&gt;"
+                  moduleName = "Lab Monitor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/james/Documents/Lab%20Monitor/Lab%20Monitor/Extensions/NSDataAsset+decode.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "806A04B5-E54D-46DA-86AF-2B55075903B4 - 4311f992602b21a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.NSDataAsset.decode() throws -&gt; Swift.Dictionary&lt;TimetableParser.Day, Swift.Array&lt;TimetableParser.TimetableEntry&gt;&gt;"
+                  moduleName = "Lab Monitor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/james/Documents/Lab%20Monitor/Lab%20Monitor/Extensions/NSDataAsset+decode.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "712">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

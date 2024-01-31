@@ -11,6 +11,11 @@
 		1A527E5B2B6A839900484C50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A527E5A2B6A839900484C50 /* ContentView.swift */; };
 		1A527E5D2B6A839A00484C50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A527E5C2B6A839A00484C50 /* Assets.xcassets */; };
 		1A527E612B6A839A00484C50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A527E602B6A839A00484C50 /* Preview Assets.xcassets */; };
+		1A527E692B6A88A400484C50 /* ActivityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A527E682B6A88A400484C50 /* ActivityRepository.swift */; };
+		1A527E732B6A8C6300484C50 /* Year.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A527E722B6A8C6300484C50 /* Year.swift */; };
+		1A527E752B6A8DFC00484C50 /* Lab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A527E742B6A8DFC00484C50 /* Lab.swift */; };
+		1A527E7A2B6A91C900484C50 /* TimetableParser in Frameworks */ = {isa = PBXBuildFile; productRef = 1A527E792B6A91C900484C50 /* TimetableParser */; };
+		1A527E7C2B6A935000484C50 /* NSDataAsset+decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A527E7B2B6A935000484C50 /* NSDataAsset+decode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,10 @@
 		1A527E5C2B6A839A00484C50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A527E5E2B6A839A00484C50 /* Lab_Monitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Lab_Monitor.entitlements; sourceTree = "<group>"; };
 		1A527E602B6A839A00484C50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1A527E682B6A88A400484C50 /* ActivityRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRepository.swift; sourceTree = "<group>"; };
+		1A527E722B6A8C6300484C50 /* Year.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Year.swift; sourceTree = "<group>"; };
+		1A527E742B6A8DFC00484C50 /* Lab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab.swift; sourceTree = "<group>"; };
+		1A527E7B2B6A935000484C50 /* NSDataAsset+decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDataAsset+decode.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A527E7A2B6A91C900484C50 /* TimetableParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +62,9 @@
 		1A527E572B6A839900484C50 /* Lab Monitor */ = {
 			isa = PBXGroup;
 			children = (
+				1A527E6E2B6A8C2600484C50 /* Extensions */,
+				1A527E712B6A8C5900484C50 /* Models */,
+				1A527E672B6A889800484C50 /* Repositories */,
 				1A527E582B6A839900484C50 /* Lab_MonitorApp.swift */,
 				1A527E5A2B6A839900484C50 /* ContentView.swift */,
 				1A527E5C2B6A839A00484C50 /* Assets.xcassets */,
@@ -67,6 +80,31 @@
 				1A527E602B6A839A00484C50 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1A527E672B6A889800484C50 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				1A527E682B6A88A400484C50 /* ActivityRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		1A527E6E2B6A8C2600484C50 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1A527E7B2B6A935000484C50 /* NSDataAsset+decode.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1A527E712B6A8C5900484C50 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1A527E722B6A8C6300484C50 /* Year.swift */,
+				1A527E742B6A8DFC00484C50 /* Lab.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +123,9 @@
 			dependencies = (
 			);
 			name = "Lab Monitor";
+			packageProductDependencies = (
+				1A527E792B6A91C900484C50 /* TimetableParser */,
+			);
 			productName = "Lab Monitor";
 			productReference = 1A527E552B6A839900484C50 /* Lab Monitor.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +154,9 @@
 				Base,
 			);
 			mainGroup = 1A527E4C2B6A839900484C50;
+			packageReferences = (
+				1A527E782B6A91C900484C50 /* XCRemoteSwiftPackageReference "timetable-parser" */,
+			);
 			productRefGroup = 1A527E562B6A839900484C50 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +183,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A527E692B6A88A400484C50 /* ActivityRepository.swift in Sources */,
 				1A527E5B2B6A839900484C50 /* ContentView.swift in Sources */,
+				1A527E732B6A8C6300484C50 /* Year.swift in Sources */,
+				1A527E752B6A8DFC00484C50 /* Lab.swift in Sources */,
 				1A527E592B6A839900484C50 /* Lab_MonitorApp.swift in Sources */,
+				1A527E7C2B6A935000484C50 /* NSDataAsset+decode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +407,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1A527E782B6A91C900484C50 /* XCRemoteSwiftPackageReference "timetable-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jmshrv/timetable-parser";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1A527E792B6A91C900484C50 /* TimetableParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A527E782B6A91C900484C50 /* XCRemoteSwiftPackageReference "timetable-parser" */;
+			productName = TimetableParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1A527E4D2B6A839900484C50 /* Project object */;
 }
