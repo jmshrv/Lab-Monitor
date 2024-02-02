@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A10DDDD2B6D04690020EBB0 /* HourDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A10DDDC2B6D04690020EBB0 /* HourDivider.swift */; };
+		1A10DDDF2B6D0BA50020EBB0 /* MockTimetableEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A10DDDE2B6D0BA50020EBB0 /* MockTimetableEntry.swift */; };
+		1A10DDE12B6D0D360020EBB0 /* TimetableEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A10DDE02B6D0D360020EBB0 /* TimetableEntryView.swift */; };
 		1A527E592B6A839900484C50 /* Lab_MonitorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A527E582B6A839900484C50 /* Lab_MonitorApp.swift */; };
-		1A527E5B2B6A839900484C50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A527E5A2B6A839900484C50 /* ContentView.swift */; };
+		1A527E5B2B6A839900484C50 /* EntriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A527E5A2B6A839900484C50 /* EntriesListView.swift */; };
 		1A527E5D2B6A839A00484C50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A527E5C2B6A839A00484C50 /* Assets.xcassets */; };
 		1A527E612B6A839A00484C50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A527E602B6A839A00484C50 /* Preview Assets.xcassets */; };
 		1A527E692B6A88A400484C50 /* ActivityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A527E682B6A88A400484C50 /* ActivityRepository.swift */; };
@@ -19,9 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A10DDDC2B6D04690020EBB0 /* HourDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourDivider.swift; sourceTree = "<group>"; };
+		1A10DDDE2B6D0BA50020EBB0 /* MockTimetableEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTimetableEntry.swift; sourceTree = "<group>"; };
+		1A10DDE02B6D0D360020EBB0 /* TimetableEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableEntryView.swift; sourceTree = "<group>"; };
 		1A527E552B6A839900484C50 /* Lab Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lab Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A527E582B6A839900484C50 /* Lab_MonitorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab_MonitorApp.swift; sourceTree = "<group>"; };
-		1A527E5A2B6A839900484C50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1A527E5A2B6A839900484C50 /* EntriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesListView.swift; sourceTree = "<group>"; };
 		1A527E5C2B6A839A00484C50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A527E5E2B6A839A00484C50 /* Lab_Monitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Lab_Monitor.entitlements; sourceTree = "<group>"; };
 		1A527E602B6A839A00484C50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -43,6 +49,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A10DDDB2B6D044B0020EBB0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1A527E5A2B6A839900484C50 /* EntriesListView.swift */,
+				1A10DDDC2B6D04690020EBB0 /* HourDivider.swift */,
+				1A10DDE02B6D0D360020EBB0 /* TimetableEntryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		1A527E4C2B6A839900484C50 = {
 			isa = PBXGroup;
 			children = (
@@ -65,8 +81,8 @@
 				1A527E6E2B6A8C2600484C50 /* Extensions */,
 				1A527E712B6A8C5900484C50 /* Models */,
 				1A527E672B6A889800484C50 /* Repositories */,
+				1A10DDDB2B6D044B0020EBB0 /* Views */,
 				1A527E582B6A839900484C50 /* Lab_MonitorApp.swift */,
-				1A527E5A2B6A839900484C50 /* ContentView.swift */,
 				1A527E5C2B6A839A00484C50 /* Assets.xcassets */,
 				1A527E5E2B6A839A00484C50 /* Lab_Monitor.entitlements */,
 				1A527E5F2B6A839A00484C50 /* Preview Content */,
@@ -94,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				1A527E7B2B6A935000484C50 /* NSDataAsset+decode.swift */,
+				1A10DDDE2B6D0BA50020EBB0 /* MockTimetableEntry.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -184,10 +201,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A527E692B6A88A400484C50 /* ActivityRepository.swift in Sources */,
-				1A527E5B2B6A839900484C50 /* ContentView.swift in Sources */,
+				1A527E5B2B6A839900484C50 /* EntriesListView.swift in Sources */,
+				1A10DDE12B6D0D360020EBB0 /* TimetableEntryView.swift in Sources */,
 				1A527E732B6A8C6300484C50 /* Year.swift in Sources */,
 				1A527E752B6A8DFC00484C50 /* Lab.swift in Sources */,
+				1A10DDDD2B6D04690020EBB0 /* HourDivider.swift in Sources */,
 				1A527E592B6A839900484C50 /* Lab_MonitorApp.swift in Sources */,
+				1A10DDDF2B6D0BA50020EBB0 /* MockTimetableEntry.swift in Sources */,
 				1A527E7C2B6A935000484C50 /* NSDataAsset+decode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,7 +352,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
@@ -340,7 +360,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.unicornsonlsd.Lab-Monitor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -370,7 +391,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
@@ -378,7 +399,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.unicornsonlsd.Lab-Monitor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
