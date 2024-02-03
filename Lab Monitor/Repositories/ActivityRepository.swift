@@ -26,7 +26,7 @@ struct ActivityRepository {
         .merging(year4) { a, b in a + b }
     
     private static var yearStart: Date {
-        let calendar = Calendar(identifier: .gregorian)
+        let calendar = Calendar.gregorianMonday
         return calendar.date(from: DateComponents(year: 2023, month: 9, day: 25))!
     }
     
@@ -43,15 +43,14 @@ struct ActivityRepository {
         
         print(weeks)
         
-        let calendarDay = Calendar(identifier: .gregorian).dateComponents([.weekday], from: date)
+        let calendarDay = Calendar.gregorianMonday.dateComponents([.weekday], from: date)
         
-//        Swift starts the week on Sunday because Americans
         let day: Day? = switch calendarDay.weekday {
-        case 2: .monday
-        case 3: .tuesday
-        case 4: .wednesday
-        case 5: .thursday
-        case 6: .friday
+        case 1: .monday
+        case 2: .tuesday
+        case 3: .wednesday
+        case 4: .thursday
+        case 5: .friday
         default: nil
         }
         
