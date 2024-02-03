@@ -7,6 +7,8 @@
 
 import Foundation
 
-enum Lab: String {
+enum Lab: String, CaseIterable, Identifiable {
+    var id: String { rawValue }
+    
     case a32 = "A32"
 }

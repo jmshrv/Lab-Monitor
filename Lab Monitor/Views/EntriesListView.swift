@@ -43,8 +43,8 @@ struct EntriesListView: View {
                     }
                 }
                 ForEach(entries) { entry in
-                    TimetableEntryView(entry: entry, height: eventHeight * Double((entry.end.hour - entry.start.hour)))
-                        .offset(y: eventOffset(eventStart: entry.start.hour))
+                    TimetableEntryTile(entry: entry, height: eventHeight * Double((entry.end.hour - entry.start.hour)))
+                        .offset(y: eventOffset(eventStart: entry.start.hour) + 2)
                         .padding(.leading, 42)
                         .padding(.trailing, 8)
                 }

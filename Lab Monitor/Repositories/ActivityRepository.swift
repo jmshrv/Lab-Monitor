@@ -45,12 +45,13 @@ struct ActivityRepository {
         
         let calendarDay = Calendar(identifier: .gregorian).dateComponents([.weekday], from: date)
         
+//        Swift starts the week on Sunday because Americans
         let day: Day? = switch calendarDay.weekday {
-        case 1: .monday
-        case 2: .tuesday
-        case 3: .wednesday
-        case 4: .thursday
-        case 5: .friday
+        case 2: .monday
+        case 3: .tuesday
+        case 4: .wednesday
+        case 5: .thursday
+        case 6: .friday
         default: nil
         }
         

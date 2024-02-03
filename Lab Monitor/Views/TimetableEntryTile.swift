@@ -1,5 +1,5 @@
 //
-//  TimetableEntryView.swift
+//  TimetableEntryTile.swift
 //  Lab Monitor
 //
 //  Created by James on 02/02/2024.
@@ -8,9 +8,9 @@
 import SwiftUI
 import TimetableParser
 
-struct TimetableEntryView: View {
+struct TimetableEntryTile: View {
     let entry: TimetableEntry
-    let height: CGFloat?
+    let height: CGFloat
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -23,15 +23,15 @@ struct TimetableEntryView: View {
             alignment: .topLeading
         )
         .frame(
-            height: height,
+            height: height - 2, // Add a little bit of padding
             alignment: .topLeading
         )
         
-        .background(.red)
+        .background(entry.color)
         .clipShape(RoundedRectangle(cornerRadius: 4))
     }
 }
 
 #Preview {
-    TimetableEntryView(entry: .mock, height: 50)
+    TimetableEntryTile(entry: .mock, height: 50)
 }

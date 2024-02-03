@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A10DDDD2B6D04690020EBB0 /* HourDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A10DDDC2B6D04690020EBB0 /* HourDivider.swift */; };
 		1A10DDDF2B6D0BA50020EBB0 /* MockTimetableEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A10DDDE2B6D0BA50020EBB0 /* MockTimetableEntry.swift */; };
-		1A10DDE12B6D0D360020EBB0 /* TimetableEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A10DDE02B6D0D360020EBB0 /* TimetableEntryView.swift */; };
+		1A10DDE12B6D0D360020EBB0 /* TimetableEntryTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A10DDE02B6D0D360020EBB0 /* TimetableEntryTile.swift */; };
 		1A527E592B6A839900484C50 /* Lab_MonitorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A527E582B6A839900484C50 /* Lab_MonitorApp.swift */; };
 		1A527E5B2B6A839900484C50 /* EntriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A527E5A2B6A839900484C50 /* EntriesListView.swift */; };
 		1A527E5D2B6A839A00484C50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A527E5C2B6A839A00484C50 /* Assets.xcassets */; };
@@ -19,12 +19,16 @@
 		1A527E752B6A8DFC00484C50 /* Lab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A527E742B6A8DFC00484C50 /* Lab.swift */; };
 		1A527E7A2B6A91C900484C50 /* TimetableParser in Frameworks */ = {isa = PBXBuildFile; productRef = 1A527E792B6A91C900484C50 /* TimetableParser */; };
 		1A527E7C2B6A935000484C50 /* NSDataAsset+decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A527E7B2B6A935000484C50 /* NSDataAsset+decode.swift */; };
+		1AB6EB452B6D47F800A55C24 /* LabsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6EB442B6D47F800A55C24 /* LabsScreen.swift */; };
+		1AB6EB472B6D49EA00A55C24 /* NavigationDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6EB462B6D49EA00A55C24 /* NavigationDestination.swift */; };
+		1AB6EB492B6D4EB200A55C24 /* LabTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6EB482B6D4EB200A55C24 /* LabTabScreen.swift */; };
+		1AB6EB4B2B6DDD5700A55C24 /* TimetableEntry+color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6EB4A2B6DDD5700A55C24 /* TimetableEntry+color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1A10DDDC2B6D04690020EBB0 /* HourDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourDivider.swift; sourceTree = "<group>"; };
 		1A10DDDE2B6D0BA50020EBB0 /* MockTimetableEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTimetableEntry.swift; sourceTree = "<group>"; };
-		1A10DDE02B6D0D360020EBB0 /* TimetableEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableEntryView.swift; sourceTree = "<group>"; };
+		1A10DDE02B6D0D360020EBB0 /* TimetableEntryTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableEntryTile.swift; sourceTree = "<group>"; };
 		1A527E552B6A839900484C50 /* Lab Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lab Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A527E582B6A839900484C50 /* Lab_MonitorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab_MonitorApp.swift; sourceTree = "<group>"; };
 		1A527E5A2B6A839900484C50 /* EntriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesListView.swift; sourceTree = "<group>"; };
@@ -35,6 +39,10 @@
 		1A527E722B6A8C6300484C50 /* Year.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Year.swift; sourceTree = "<group>"; };
 		1A527E742B6A8DFC00484C50 /* Lab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab.swift; sourceTree = "<group>"; };
 		1A527E7B2B6A935000484C50 /* NSDataAsset+decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDataAsset+decode.swift"; sourceTree = "<group>"; };
+		1AB6EB442B6D47F800A55C24 /* LabsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabsScreen.swift; sourceTree = "<group>"; };
+		1AB6EB462B6D49EA00A55C24 /* NavigationDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDestination.swift; sourceTree = "<group>"; };
+		1AB6EB482B6D4EB200A55C24 /* LabTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabTabScreen.swift; sourceTree = "<group>"; };
+		1AB6EB4A2B6DDD5700A55C24 /* TimetableEntry+color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimetableEntry+color.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +62,9 @@
 			children = (
 				1A527E5A2B6A839900484C50 /* EntriesListView.swift */,
 				1A10DDDC2B6D04690020EBB0 /* HourDivider.swift */,
-				1A10DDE02B6D0D360020EBB0 /* TimetableEntryView.swift */,
+				1A10DDE02B6D0D360020EBB0 /* TimetableEntryTile.swift */,
+				1AB6EB442B6D47F800A55C24 /* LabsScreen.swift */,
+				1AB6EB482B6D4EB200A55C24 /* LabTabScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -111,6 +121,7 @@
 			children = (
 				1A527E7B2B6A935000484C50 /* NSDataAsset+decode.swift */,
 				1A10DDDE2B6D0BA50020EBB0 /* MockTimetableEntry.swift */,
+				1AB6EB4A2B6DDD5700A55C24 /* TimetableEntry+color.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -120,6 +131,7 @@
 			children = (
 				1A527E722B6A8C6300484C50 /* Year.swift */,
 				1A527E742B6A8DFC00484C50 /* Lab.swift */,
+				1AB6EB462B6D49EA00A55C24 /* NavigationDestination.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -202,13 +214,17 @@
 			files = (
 				1A527E692B6A88A400484C50 /* ActivityRepository.swift in Sources */,
 				1A527E5B2B6A839900484C50 /* EntriesListView.swift in Sources */,
-				1A10DDE12B6D0D360020EBB0 /* TimetableEntryView.swift in Sources */,
+				1A10DDE12B6D0D360020EBB0 /* TimetableEntryTile.swift in Sources */,
 				1A527E732B6A8C6300484C50 /* Year.swift in Sources */,
 				1A527E752B6A8DFC00484C50 /* Lab.swift in Sources */,
 				1A10DDDD2B6D04690020EBB0 /* HourDivider.swift in Sources */,
 				1A527E592B6A839900484C50 /* Lab_MonitorApp.swift in Sources */,
 				1A10DDDF2B6D0BA50020EBB0 /* MockTimetableEntry.swift in Sources */,
 				1A527E7C2B6A935000484C50 /* NSDataAsset+decode.swift in Sources */,
+				1AB6EB472B6D49EA00A55C24 /* NavigationDestination.swift in Sources */,
+				1AB6EB4B2B6DDD5700A55C24 /* TimetableEntry+color.swift in Sources */,
+				1AB6EB452B6D47F800A55C24 /* LabsScreen.swift in Sources */,
+				1AB6EB492B6D4EB200A55C24 /* LabTabScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
