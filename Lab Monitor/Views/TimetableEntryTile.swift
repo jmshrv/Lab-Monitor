@@ -15,7 +15,8 @@ struct TimetableEntryTile: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text("**\(entry.activities.joined(separator: ", "))** - \(entry.sessionTitle)")
-            Text(entry.location)
+//            Text(entry.location)
+            Text(entry.type)
         }
         .padding(.all, 4)
         .frame(
