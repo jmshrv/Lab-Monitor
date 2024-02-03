@@ -12,5 +12,5 @@ enum Lab: String, CaseIterable, Identifiable, Codable {
     
     case a32 = "A32"
     case a07 = "A07"
-    case c11 = "C11"
+//    case c11 = "C11"
 }

@@ -24,8 +24,8 @@ extension TimetableEntry {
         return switch minYear {
         case "1": .red
         case "2": .orange
-        case "3": .yellow
-        case "4": .green
+        case "3": .green
+        case "4": .purple
         default: .gray
         }
     }
