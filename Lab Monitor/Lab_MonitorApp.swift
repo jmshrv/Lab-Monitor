@@ -9,11 +9,12 @@ import SwiftUI
 
 @main
 struct Lab_MonitorApp: App {
-    @State var navigationPath: [NavigationDestination] = []
+    @State private var navigationModel = NavigationModel()
+    @AppStorage("navigation") private var data: Data?
     
     var body: some Scene {
         WindowGroup {
-            NavigationStack {               
+            NavigationStack(path: $navigationModel.path) {               
                 LabsScreen()
                     .navigationDestination(for: NavigationDestination.self) { destination in
                         switch (destination) {
@@ -21,6 +22,16 @@ struct Lab_MonitorApp: App {
                             LabTabScreen(lab: lab)
                         }
                     }
+            }
+            .onAppear {
+                if let data = data {
+                    if let decodedNav = try? JSONDecoder().decode(NavigationModel.self, from: data) {
+                        navigationModel.path = decodedNav.path
+                    }
+                }
+            }
+            .onChange(of: navigationModel.path) {
+                data = try? JSONEncoder().encode(navigationModel)
             }
         }
     }

@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum NavigationDestination: Hashable {
+enum NavigationDestination: Hashable, Codable, Equatable {
     case labCalendar(Lab)
 }

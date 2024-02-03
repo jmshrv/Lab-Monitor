@@ -27,6 +27,7 @@
 		1AB6EB4B2B6DDD5700A55C24 /* TimetableEntry+color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6EB4A2B6DDD5700A55C24 /* TimetableEntry+color.swift */; };
 		1AB6EB4D2B6DE13700A55C24 /* Calendar+gregorianMonday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6EB4C2B6DE13700A55C24 /* Calendar+gregorianMonday.swift */; };
 		1AB6EB4F2B6DE42500A55C24 /* Calendar+daysOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6EB4E2B6DE42500A55C24 /* Calendar+daysOfWeek.swift */; };
+		1AF3F68F2B6E94DB0075E664 /* NavigationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3F68E2B6E94DB0075E664 /* NavigationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		1AB6EB4A2B6DDD5700A55C24 /* TimetableEntry+color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimetableEntry+color.swift"; sourceTree = "<group>"; };
 		1AB6EB4C2B6DE13700A55C24 /* Calendar+gregorianMonday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+gregorianMonday.swift"; sourceTree = "<group>"; };
 		1AB6EB4E2B6DE42500A55C24 /* Calendar+daysOfWeek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+daysOfWeek.swift"; sourceTree = "<group>"; };
+		1AF3F68E2B6E94DB0075E664 /* NavigationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				1A527E722B6A8C6300484C50 /* Year.swift */,
 				1A527E742B6A8DFC00484C50 /* Lab.swift */,
 				1AB6EB462B6D49EA00A55C24 /* NavigationDestination.swift */,
+				1AF3F68E2B6E94DB0075E664 /* NavigationModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				1AB6EB4F2B6DE42500A55C24 /* Calendar+daysOfWeek.swift in Sources */,
 				1A527E5B2B6A839900484C50 /* EntriesListView.swift in Sources */,
 				1A10DDE12B6D0D360020EBB0 /* TimetableEntryTile.swift in Sources */,
+				1AF3F68F2B6E94DB0075E664 /* NavigationModel.swift in Sources */,
 				1A527E732B6A8C6300484C50 /* Year.swift in Sources */,
 				1A527E752B6A8DFC00484C50 /* Lab.swift in Sources */,
 				1A10DDDD2B6D04690020EBB0 /* HourDivider.swift in Sources */,
@@ -384,7 +388,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
@@ -423,7 +427,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
