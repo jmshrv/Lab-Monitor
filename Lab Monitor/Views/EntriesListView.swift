@@ -11,12 +11,12 @@ import TimetableParser
 struct EntriesListView: View {
     let entries: [TimetableEntry]
     
-    @State var eventHeight = 75.0
+//    @State var eventHeight = 75.0
     
     private let startHour = 9
     private let endHour = 18
     
-    private func eventOffset(eventStart: Int) -> Double {
+    private func eventOffset(_ eventStart: Int, _ eventHeight: CGFloat) -> Double {
         var res = Double((eventStart - startHour)) * eventHeight
         
         res += 6
@@ -30,9 +30,11 @@ struct EntriesListView: View {
     }
     
     var body: some View {
-        ScrollView {
+        GeometryReader { geo in
+            let eventHeight = geo.size.height / Double((startHour...endHour).count)
+            
             ZStack(alignment: .topLeading) {
-                ZStack {
+                ZStack(alignment: .topLeading) {
                     ForEach(startHour...endHour, id: \.self) { hour in
                         HourDivider(hour: hour)
 //                            .frame(
@@ -44,7 +46,7 @@ struct EntriesListView: View {
                 }
                 ForEach(entries) { entry in
                     TimetableEntryTile(entry: entry, height: eventHeight * Double((entry.end.hour - entry.start.hour)))
-                        .offset(y: eventOffset(eventStart: entry.start.hour) + 2)
+                        .offset(y: eventOffset(entry.start.hour, eventHeight) + 2)
                         .padding(.leading, 42)
                         .padding(.trailing, 8)
                 }
