@@ -12,7 +12,7 @@ struct LabTabScreen: View {
     
     private let calendar = Calendar.gregorianMonday
     
-    @State private var tabIndex = Date()
+    @State private var tabIndex = Calendar.gregorianMonday.startOfDay(for: Date())
     
     var body: some View {
         TabView(selection: $tabIndex) {
@@ -28,7 +28,7 @@ struct LabTabScreen: View {
         .navigationTitle(lab.rawValue)
         .navigationBarTitleDisplayMode(.inline)
         .safeAreaInset(edge: .top) {
-            Text("\(tabIndex)")
+            WeekHeader(days: calendar.daysOfWeek, selectedDay: $tabIndex)
         }
     }
 }

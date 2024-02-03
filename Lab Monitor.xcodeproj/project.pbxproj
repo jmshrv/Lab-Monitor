@@ -10,6 +10,8 @@
 		1A10DDDD2B6D04690020EBB0 /* HourDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A10DDDC2B6D04690020EBB0 /* HourDivider.swift */; };
 		1A10DDDF2B6D0BA50020EBB0 /* MockTimetableEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A10DDDE2B6D0BA50020EBB0 /* MockTimetableEntry.swift */; };
 		1A10DDE12B6D0D360020EBB0 /* TimetableEntryTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A10DDE02B6D0D360020EBB0 /* TimetableEntryTile.swift */; };
+		1A3122D32B6DE971009C335D /* WeekHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3122D22B6DE971009C335D /* WeekHeader.swift */; };
+		1A3122D52B6DEA6C009C335D /* DayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3122D42B6DEA6C009C335D /* DayButton.swift */; };
 		1A527E592B6A839900484C50 /* Lab_MonitorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A527E582B6A839900484C50 /* Lab_MonitorApp.swift */; };
 		1A527E5B2B6A839900484C50 /* EntriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A527E5A2B6A839900484C50 /* EntriesListView.swift */; };
 		1A527E5D2B6A839A00484C50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A527E5C2B6A839A00484C50 /* Assets.xcassets */; };
@@ -31,6 +33,8 @@
 		1A10DDDC2B6D04690020EBB0 /* HourDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourDivider.swift; sourceTree = "<group>"; };
 		1A10DDDE2B6D0BA50020EBB0 /* MockTimetableEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTimetableEntry.swift; sourceTree = "<group>"; };
 		1A10DDE02B6D0D360020EBB0 /* TimetableEntryTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableEntryTile.swift; sourceTree = "<group>"; };
+		1A3122D22B6DE971009C335D /* WeekHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekHeader.swift; sourceTree = "<group>"; };
+		1A3122D42B6DEA6C009C335D /* DayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayButton.swift; sourceTree = "<group>"; };
 		1A527E552B6A839900484C50 /* Lab Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lab Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A527E582B6A839900484C50 /* Lab_MonitorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab_MonitorApp.swift; sourceTree = "<group>"; };
 		1A527E5A2B6A839900484C50 /* EntriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesListView.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 				1A10DDE02B6D0D360020EBB0 /* TimetableEntryTile.swift */,
 				1AB6EB442B6D47F800A55C24 /* LabsScreen.swift */,
 				1AB6EB482B6D4EB200A55C24 /* LabTabScreen.swift */,
+				1A3122D22B6DE971009C335D /* WeekHeader.swift */,
+				1A3122D42B6DEA6C009C335D /* DayButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -218,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A3122D32B6DE971009C335D /* WeekHeader.swift in Sources */,
 				1A527E692B6A88A400484C50 /* ActivityRepository.swift in Sources */,
 				1AB6EB4F2B6DE42500A55C24 /* Calendar+daysOfWeek.swift in Sources */,
 				1A527E5B2B6A839900484C50 /* EntriesListView.swift in Sources */,
@@ -228,6 +235,7 @@
 				1A527E592B6A839900484C50 /* Lab_MonitorApp.swift in Sources */,
 				1A10DDDF2B6D0BA50020EBB0 /* MockTimetableEntry.swift in Sources */,
 				1AB6EB4D2B6DE13700A55C24 /* Calendar+gregorianMonday.swift in Sources */,
+				1A3122D52B6DEA6C009C335D /* DayButton.swift in Sources */,
 				1A527E7C2B6A935000484C50 /* NSDataAsset+decode.swift in Sources */,
 				1AB6EB472B6D49EA00A55C24 /* NavigationDestination.swift in Sources */,
 				1AB6EB4B2B6DDD5700A55C24 /* TimetableEntry+color.swift in Sources */,

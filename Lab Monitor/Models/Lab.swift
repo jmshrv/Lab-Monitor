@@ -11,4 +11,6 @@ enum Lab: String, CaseIterable, Identifiable {
     var id: String { rawValue }
     
     case a32 = "A32"
+    case a07 = "A07"
+    case c11 = "C11"
 }
