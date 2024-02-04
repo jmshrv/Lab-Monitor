@@ -31,7 +31,7 @@ struct EntriesListView: View {
     
     var body: some View {
         GeometryReader { geo in
-            let eventHeight = geo.size.height / Double((startHour...endHour).count)
+            let eventHeight = geo.size.height / Double((startHour...endHour).count - 1)
             
             ZStack(alignment: .topLeading) {
                 ZStack(alignment: .topLeading) {
@@ -48,7 +48,6 @@ struct EntriesListView: View {
                     TimetableEntryTile(entry: entry, height: eventHeight * Double((entry.end.hour - entry.start.hour)))
                         .offset(y: eventOffset(entry.start.hour, eventHeight) + 2)
                         .padding(.leading, 42)
-                        .padding(.trailing, 8)
                 }
             }
         }

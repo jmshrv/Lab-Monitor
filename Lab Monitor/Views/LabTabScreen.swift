@@ -22,6 +22,8 @@ struct LabTabScreen: View {
             ForEach(calendar.daysOfWeek, id: \.timeIntervalSince1970) { day in
                 EntriesListView(entries: ActivityRepository.entries(for: day).filter { $0.location.contains(lab.rawValue) })
                     .tag(day)
+                    .safeAreaPadding()
+                    
             }
         }
         .tabViewStyle(.page(indexDisplayMode: .never))
@@ -30,6 +32,7 @@ struct LabTabScreen: View {
         .safeAreaInset(edge: .top) {
             WeekHeader(days: calendar.daysOfWeek, selectedDay: $tabIndex)
         }
+        .ignoresSafeArea(.container, edges: .bottom)
     }
 }
 
