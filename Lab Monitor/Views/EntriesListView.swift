@@ -10,6 +10,7 @@ import TimetableParser
 
 struct EntriesListView: View {
     let entries: [TimetableEntry]
+    let showTimeHeader: Bool
     
 //    @State var eventHeight = 75.0
     
@@ -34,20 +35,18 @@ struct EntriesListView: View {
             let eventHeight = geo.size.height / Double((startHour...endHour).count - 1)
             
             ZStack(alignment: .topLeading) {
-                ZStack(alignment: .topLeading) {
-                    ForEach(startHour...endHour, id: \.self) { hour in
-                        HourDivider(hour: hour)
-//                            .frame(
-//                                height: eventHeight,
-//                                alignment: .top
-//                            )
-                            .offset(y: (Double((hour - startHour)) * eventHeight))
+                if showTimeHeader {
+                    ZStack(alignment: .topLeading) {
+                        ForEach(startHour...endHour, id: \.self) { hour in
+                            HourDivider(hour: hour)
+                                .offset(y: (Double((hour - startHour)) * eventHeight))
+                        }
                     }
                 }
                 ForEach(entries) { entry in
                     TimetableEntryTile(entry: entry, height: eventHeight * Double((entry.end.hour - entry.start.hour)))
                         .offset(y: eventOffset(entry.start.hour, eventHeight) + 2)
-                        .padding(.leading, 42)
+                        .padding(.leading, showTimeHeader ? 42 : 0)
                 }
             }
         }
@@ -55,8 +54,14 @@ struct EntriesListView: View {
     }
 }
 
-#Preview {
+#Preview("With Hour Header") {
     EntriesListView(entries: [
         .mock
-    ])
+    ], showTimeHeader: true)
+}
+
+#Preview("Without Hour Header") {
+    EntriesListView(entries: [
+        .mock
+    ], showTimeHeader: false)
 }

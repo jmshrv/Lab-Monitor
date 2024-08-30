@@ -27,6 +27,8 @@
 		1AB6EB4B2B6DDD5700A55C24 /* TimetableEntry+color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6EB4A2B6DDD5700A55C24 /* TimetableEntry+color.swift */; };
 		1AB6EB4D2B6DE13700A55C24 /* Calendar+gregorianMonday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6EB4C2B6DE13700A55C24 /* Calendar+gregorianMonday.swift */; };
 		1AB6EB4F2B6DE42500A55C24 /* Calendar+daysOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6EB4E2B6DE42500A55C24 /* Calendar+daysOfWeek.swift */; };
+		1AEDEE812B727EAB00D73D63 /* LabWeekScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDEE802B727EAB00D73D63 /* LabWeekScreen.swift */; };
+		1AEDEE832B72816F00D73D63 /* LabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDEE822B72816F00D73D63 /* LabScreen.swift */; };
 		1AF3F68F2B6E94DB0075E664 /* NavigationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3F68E2B6E94DB0075E664 /* NavigationModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,8 @@
 		1AB6EB4A2B6DDD5700A55C24 /* TimetableEntry+color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimetableEntry+color.swift"; sourceTree = "<group>"; };
 		1AB6EB4C2B6DE13700A55C24 /* Calendar+gregorianMonday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+gregorianMonday.swift"; sourceTree = "<group>"; };
 		1AB6EB4E2B6DE42500A55C24 /* Calendar+daysOfWeek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+daysOfWeek.swift"; sourceTree = "<group>"; };
+		1AEDEE802B727EAB00D73D63 /* LabWeekScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabWeekScreen.swift; sourceTree = "<group>"; };
+		1AEDEE822B72816F00D73D63 /* LabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabScreen.swift; sourceTree = "<group>"; };
 		1AF3F68E2B6E94DB0075E664 /* NavigationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +81,8 @@
 				1AB6EB482B6D4EB200A55C24 /* LabTabScreen.swift */,
 				1A3122D22B6DE971009C335D /* WeekHeader.swift */,
 				1A3122D42B6DEA6C009C335D /* DayButton.swift */,
+				1AEDEE802B727EAB00D73D63 /* LabWeekScreen.swift */,
+				1AEDEE822B72816F00D73D63 /* LabScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -234,6 +240,7 @@
 				1A10DDE12B6D0D360020EBB0 /* TimetableEntryTile.swift in Sources */,
 				1AF3F68F2B6E94DB0075E664 /* NavigationModel.swift in Sources */,
 				1A527E732B6A8C6300484C50 /* Year.swift in Sources */,
+				1AEDEE812B727EAB00D73D63 /* LabWeekScreen.swift in Sources */,
 				1A527E752B6A8DFC00484C50 /* Lab.swift in Sources */,
 				1A10DDDD2B6D04690020EBB0 /* HourDivider.swift in Sources */,
 				1A527E592B6A839900484C50 /* Lab_MonitorApp.swift in Sources */,
@@ -243,6 +250,7 @@
 				1A527E7C2B6A935000484C50 /* NSDataAsset+decode.swift in Sources */,
 				1AB6EB472B6D49EA00A55C24 /* NavigationDestination.swift in Sources */,
 				1AB6EB4B2B6DDD5700A55C24 /* TimetableEntry+color.swift in Sources */,
+				1AEDEE832B72816F00D73D63 /* LabScreen.swift in Sources */,
 				1AB6EB452B6D47F800A55C24 /* LabsScreen.swift in Sources */,
 				1AB6EB492B6D4EB200A55C24 /* LabTabScreen.swift in Sources */,
 			);
@@ -397,7 +405,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.unicornsonlsd.Lab-Monitor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -437,7 +445,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.unicornsonlsd.Lab-Monitor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

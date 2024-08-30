@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct LabsScreen: View {
+    @Binding var selection: Lab?
+    
     var body: some View {
-        List(Lab.allCases) { lab in
+        List(Lab.allCases, selection: $selection) { lab in
             NavigationLink(lab.rawValue, value: NavigationDestination.labCalendar(lab))
         }
         .navigationTitle("Labs")
@@ -17,5 +19,5 @@ struct LabsScreen: View {
 }
 
 #Preview {
-    LabsScreen()
+    LabsScreen(selection: .constant(nil))
 }

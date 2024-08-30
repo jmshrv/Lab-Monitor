@@ -10,8 +10,10 @@ import Foundation
 @Observable
 class NavigationModel: Codable, Equatable {
     var path: [NavigationDestination] = []
+    var lab: Lab?
     
     static func == (lhs: NavigationModel, rhs: NavigationModel) -> Bool {
-        lhs.path == rhs.path
+        lhs.path == rhs.path &&
+        lhs.lab == rhs.lab
     }
 }

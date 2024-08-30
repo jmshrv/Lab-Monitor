@@ -14,14 +14,33 @@ struct Lab_MonitorApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationStack(path: $navigationModel.path) {               
-                LabsScreen()
+//            NavigationStack(path: $navigationModel.path) {               
+//                LabsScreen()
+//                    .navigationDestination(for: NavigationDestination.self) { destination in
+//                        switch (destination) {
+//                        case .labCalendar(let lab):
+//                            LabScreen(lab: lab)
+//                        }
+//                    }
+//            }
+            NavigationSplitView {
+                LabsScreen(selection: $navigationModel.lab)
+            } detail: {
+                NavigationStack {
+                    Group {
+                        if let lab = navigationModel.lab {
+                            LabScreen(lab: lab)
+                        } else {
+                            ContentUnavailableView("Select a lab", systemImage: "list.bullet")
+                        }
+                    }
                     .navigationDestination(for: NavigationDestination.self) { destination in
                         switch (destination) {
                         case .labCalendar(let lab):
-                            LabTabScreen(lab: lab)
+                            LabScreen(lab: lab)
                         }
                     }
+                }
             }
             .onAppear {
                 if let data = data {
