@@ -27,7 +27,7 @@ struct ActivityRepository {
     
     private static var yearStart: Date {
         let calendar = Calendar.gregorianMonday
-        return calendar.date(from: DateComponents(year: 2023, month: 9, day: 25))!
+        return calendar.date(from: DateComponents(year: 2024, month: 9, day: 23))!
     }
     
 //    static func entries(for lab: Lab) -> [TimetableEntry] {
